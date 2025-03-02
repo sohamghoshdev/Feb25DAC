@@ -153,8 +153,6 @@ Example output:
 /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 ```
 
-Here’s the updated version for **Part B** with the correct answers:
-
 ---
 
 ## Part B: Identify True or False:
