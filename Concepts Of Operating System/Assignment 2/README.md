@@ -150,4 +150,38 @@ Example output:
 /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 ```
 
+Here’s the updated version for **Part B** with the correct answers:
+
+---
+
+## Part B: Identify True or False:
+
+1. **ls is used to list files and directories in a directory.**  
+   **Answer:** True  
+
+2. **mv is used to move files and directories.**  
+   **Answer:** True  
+
+3. **cd is used to copy files and directories.**  
+   **Answer:** False  
+   **Correction:** `cd` is used to change the current directory, not to copy files and directories.  
+
+4. **pwd stands for "print working directory" and displays the current directory.**  
+   **Answer:** True  
+
+5. **grep is used to search for patterns in files.**  
+   **Answer:** True  
+
+6. **chmod 755 file.txt gives read, write, and execute permissions to the owner, and read and execute permissions to group and others.**  
+   **Answer:** True  
+
+7. **mkdir -p directory1/directory2 creates nested directories, creating directory2 inside directory1 if directory1 does not exist.**  
+   **Answer:** True  
+
+8. **rm -rf file.txt deletes a file forcefully without confirmation.**  
+   **Answer:** False  
+   **Correction:** `rm -rf file.txt` is used to forcefully delete a directory and its contents. For a single file, `rm -f file.txt` is sufficient.  
+
+---
+
 ---
