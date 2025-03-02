@@ -182,6 +182,21 @@ Here’s the updated version for **Part B** with the correct answers:
    **Answer:** False  
    **Correction:** `rm -rf file.txt` is used to forcefully delete a directory and its contents. For a single file, `rm -f file.txt` is sufficient.  
 
----
+## Identify the Incorrect Commands:
+
+1. **chmodx is used to change file permissions.**  
+   **Correction:** `chmod`  
+
+2. **cpy is used to copy files and directories.**   
+   **Correction:** `cp` 
+
+3. **mkfile is used to create a new file.**  
+   **Correction:** `touch` 
+
+4. **catx is used to concatenate files.**  
+   **Correction:** `cat` 
+
+5. **rn is used to rename files.**  
+   **Correction:** `mv` 
 
 ---
