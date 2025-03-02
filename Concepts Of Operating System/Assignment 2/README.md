@@ -198,5 +198,153 @@ Here’s the updated version for **Part B** with the correct answers:
 
 5. **rn is used to rename files.**  
    **Correction:** `mv` 
+Here are the solutions to **Part C**:
+
+---
+
+## Part C: Shell Scripting Questions
+
+### **Question 1:** Write a shell script that prints "Hello, World!" to the terminal.  
+**Answer:**  
+```bash
+#!/bin/bash
+echo "Hello, World!"
+```
+
+---
+
+### **Question 2:** Declare a variable named "name" and assign the value "CDAC Mumbai" to it. Print the value of the variable.  
+**Answer:**  
+```bash
+#!/bin/bash
+name="CDAC Mumbai"
+echo $name
+```
+
+---
+
+### **Question 3:** Write a shell script that takes a number as input from the user and prints it.  
+**Answer:**  
+```bash
+#!/bin/bash
+echo "Enter a number:"
+read number
+echo "You entered: $number"
+```
+
+---
+
+### **Question 4:** Write a shell script that performs addition of two numbers (e.g., 5 and 3) and prints the result.  
+**Answer:**  
+```bash
+#!/bin/bash
+num1=5
+num2=3
+sum=$((num1 + num2))
+echo "The sum is: $sum"
+```
+
+---
+
+### **Question 5:** Write a shell script that takes a number as input and prints "Even" if it is even, otherwise prints "Odd".  
+**Answer:**  
+```bash
+#!/bin/bash
+echo "Enter a number:"
+read number
+if [ $((number % 2)) -eq 0 ]; then
+    echo "Even"
+else
+    echo "Odd"
+fi
+```
+
+---
+
+### **Question 6:** Write a shell script that uses a for loop to print numbers from 1 to 5.  
+**Answer:**  
+```bash
+#!/bin/bash
+for i in {1..5}
+do
+    echo $i
+done
+```
+
+---
+
+### **Question 7:** Write a shell script that uses a while loop to print numbers from 1 to 5.  
+**Answer:**  
+```bash
+#!/bin/bash
+i=1
+while [ $i -le 5 ]
+do
+    echo $i
+    i=$((i + 1))
+done
+```
+
+---
+
+### **Question 8:** Write a shell script that checks if a file named "file.txt" exists in the current directory. If it does, print "File exists", otherwise, print "File does not exist".  
+**Answer:**  
+```bash
+#!/bin/bash
+if [ -f "file.txt" ]; then
+    echo "File exists"
+else
+    echo "File does not exist"
+fi
+```
+
+---
+
+### **Question 9:** Write a shell script that uses the if statement to check if a number is greater than 10 and prints a message accordingly.  
+**Answer:**  
+```bash
+#!/bin/bash
+echo "Enter a number:"
+read number
+if [ $number -gt 10 ]; then
+    echo "The number is greater than 10"
+else
+    echo "The number is not greater than 10"
+fi
+```
+
+---
+
+### **Question 10:** Write a shell script that uses nested for loops to print a multiplication table for numbers from 1 to 5. The output should be formatted nicely, with each row representing a number and each column representing the multiplication result for that number.  
+**Answer:**  
+```bash
+#!/bin/bash
+for i in {1..5}
+do
+    for j in {1..10}
+    do
+        echo -n "$((i * j)) "
+    done
+    echo ""
+done
+```
+
+---
+
+### **Question 11:** Write a shell script that uses a while loop to read numbers from the user until the user enters a negative number. For each positive number entered, print its square. Use the break statement to exit the loop when a negative number is entered.  
+**Answer:**  
+```bash
+#!/bin/bash
+while true
+do
+    echo "Enter a number (negative to exit):"
+    read number
+    if [ $number -lt 0 ]; then
+        break
+    fi
+    square=$((number * number))
+    echo "Square of $number is: $square"
+done
+```
 
 ---
